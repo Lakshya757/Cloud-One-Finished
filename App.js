@@ -7,7 +7,6 @@ import Card from "./screens/Card";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import Header from "./components/Header";
-import AddNotes from "./screens/AddNotes";
 import TabNavigator from "./navigation/TabNavigator";
 import Notes from "./screens/Notes";
 import Edit from "./screens/Edit";

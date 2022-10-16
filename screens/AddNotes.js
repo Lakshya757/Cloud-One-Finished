@@ -23,11 +23,17 @@ const AddNotes=()=>{
         <View>
             <View style={styles.container}>
                 <TextInput 
-                    placeholder='Title'
                     onChangeText={(x)=>{setTitle(x)}}
                     value={title}
                     multiline={true}
+                    placeholder='Title'
                     style={styles.input}
+                    placeholderTextColor="#54636A"
+                    returnKeyType="search"
+                    autoFocus={true}
+                    editable={true}
+                    pointerEvents="auto"
+                    blurOnSubmit
                 />
                 <TextInput 
                     placeholder='Take a Note...'
@@ -49,7 +55,7 @@ const AddNotes=()=>{
 
 const styles = StyleSheet.create({
     container:{
-      flex:1,
+    //   flex:1,
       alignItems:'center',
       marginTop:100,
   
@@ -63,7 +69,8 @@ const styles = StyleSheet.create({
       borderBottomColor:'#000',
       marginBottom:10,
       textAlign:'center',
-      marginTop:25
+      marginTop:25,
+      color: '#36404a',
     },
     button:{
       marginTop:50,

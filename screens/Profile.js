@@ -27,8 +27,8 @@ const Profile = () => {
 
   return(
     <SafeAreaView style={styles.container}>
-      <Text style={{fontSize:20,fontWeight:'bold'}}>
-        Hello, {name.firstName}
+      <Text style={{fontSize:20,fontWeight:'bold',padding:50,paddingBottom:60,marginTop:20}}>
+        Hello, {name.firstName+name.lastName}
       </Text>
 
       <TouchableOpacity
@@ -49,7 +49,7 @@ const Profile = () => {
 
 const styles = StyleSheet.create({
   container:{
-    flex:1,
+    // flex:1,
     alignItems:'center',
     marginTop:100,
 

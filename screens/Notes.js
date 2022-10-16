@@ -48,7 +48,7 @@ export default function Notes(){
             <FlatList
               data={users}
               renderItem={({ item }) => (
-                <View style={{ height: 50, flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                   <TouchableOpacity
                     onPress={()=>clickHandler(item.title,item.body)}
                   >

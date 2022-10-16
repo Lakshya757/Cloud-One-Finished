@@ -27,13 +27,14 @@ function Card(props){
   
     return (
     <View>
-        <View>
+        <View style={{}}>
             <TouchableOpacity
                 onPress={()=>deleteHandler()}
             >
                 <Ionicons
                     name='trash'
-                    size={24}
+                    size={35}
+                    style={{alignSelf:'flex-end'}}
                 />
             </TouchableOpacity>
             <TouchableOpacity
@@ -41,7 +42,8 @@ function Card(props){
             >
                 <Ionicons
                     name='pencil'
-                    size={24}
+                    size={35}
+                    style={{alignSelf:'flex-end'}}
                 />
             </TouchableOpacity>
         </View>
@@ -55,10 +57,11 @@ function Card(props){
 
 const styles = StyleSheet.create({
     body:{
-        flex:1,
-        flexWrap:'wrap',
-        fontSize:24,
-        padding:15
+        // flex:1,
+        // flexWrap:'wrap',
+        fontSize:32,
+        padding:15,
+        fontWeight:'bold'
     }
 })
 
